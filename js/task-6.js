@@ -36,6 +36,7 @@ refs.createBtn.addEventListener('click', () => {
 
   if (isInRange) {
     refs.boxContainer.innerHTML = createBoxes(amount);
+    inputNumber.value = '';
   } else {
     alert('Please enter a number between 1 and 100.');
   }
